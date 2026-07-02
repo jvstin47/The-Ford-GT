@@ -26,36 +26,36 @@ export default function Specs() {
 </div>
 <div className="relative z-10 text-center max-w-4xl px-margin-mobile mt-16">
 <span className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} block mb-6 tracking-[0.8em] transition-colors`}>FORM FOLLOWING FUNCTION</span>
-<h1 className="font-display-xl text-display-xl mb-8 uppercase text-off-white">Engineering Purity</h1>
+<h1 className="font-display-xl text-6xl md:text-display-xl mb-8 uppercase text-off-white">Engineering Purity</h1>
 
 <p className="font-body-md text-body-md text-on-surface-variant/80 max-w-2xl mx-auto mb-12">
                 A bridge between 1966 and tomorrow. Born to win Le Mans. Built to redefine the supercar through surgical aerodynamics and raw technical excellence.
             </p>
 <div className="flex flex-col md:flex-row justify-center gap-12 border-t border-surface-variant/40 pt-12">
-<div className="text-center">
+<div className="text-center border-b border-surface-variant/40 md:border-b-0 pb-8 md:pb-0">
 <span className="block font-eyebrow-caps text-label-bold text-outline uppercase mb-1">Top Speed</span>
-<span className="font-display-xl text-headline-lg text-off-white">216 MPH</span>
+<span className="font-display-xl text-5xl md:text-headline-lg text-off-white">216 MPH</span>
 </div>
 <div className="hidden md:block w-[1px] h-12 bg-surface-variant/40 self-center"></div>
-<div className="text-center">
+<div className="text-center border-b border-surface-variant/40 md:border-b-0 pb-8 md:pb-0">
 <span className="block font-eyebrow-caps text-label-bold text-outline uppercase mb-1">0-60 MPH</span>
-<span className="font-display-xl text-headline-lg text-off-white">3.0S</span>
+<span className="font-display-xl text-5xl md:text-headline-lg text-off-white">3.0S</span>
 </div>
 <div className="hidden md:block w-[1px] h-12 bg-surface-variant/40 self-center"></div>
 <div className="text-center">
 <span className="block font-eyebrow-caps text-label-bold text-outline uppercase mb-1">Power</span>
-<span className="font-display-xl text-headline-lg text-off-white">660 HP</span>
+<span className="font-display-xl text-5xl md:text-headline-lg text-off-white">660 HP</span>
 </div>
 </div>
 </div>
 </section>
 
 {/*  Engineering Deep Dive: The Carbon Tub  */}
-<section className="py-40 px-margin-desktop bg-surface-container-lowest overflow-hidden">
-<div className="max-w-container-max mx-auto grid md:grid-cols-2 gap-24 items-center">
+<section className="py-24 md:py-40 px-6 md:px-margin-desktop bg-surface-container-lowest overflow-hidden">
+<div className="max-w-container-max mx-auto grid md:grid-cols-2 gap-12 md:gap-24 items-center">
 <div className="scroll-reveal">
 <span className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} block mb-4 uppercase transition-colors`}>The Foundation</span>
-<h2 className="font-headline-lg text-headline-lg mb-8 uppercase tracking-tight text-off-white">The Carbon Fiber Core</h2>
+<h2 className="font-headline-lg text-4xl md:text-headline-lg mb-8 uppercase tracking-tight text-off-white">The Carbon Fiber Core</h2>
 <div className="space-y-6 text-on-surface-variant">
 <p className="font-body-md text-body-md">
                         The Ford GT’s structural integrity is anchored by a high-strength carbon fiber monocoque. This lightweight "tub" ensures maximum rigidity while minimizing mass, a critical factor for the vehicle's track-focused performance.
@@ -88,11 +88,11 @@ export default function Specs() {
 </section>
 
 {/* Cockpit / Interior Section */}
-<section className="py-40 bg-surface px-margin-desktop">
+<section className="py-24 md:py-40 bg-surface px-6 md:px-margin-desktop">
 <div className="max-w-container-max mx-auto">
-<div className="text-center mb-20">
+<div className="text-center mb-12 md:mb-20">
   <span className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} block mb-4 uppercase transition-colors`}>The Cockpit</span>
-  <h2 className="font-headline-lg text-headline-lg uppercase tracking-tight text-off-white">Designed for Control</h2>
+  <h2 className="font-headline-lg text-4xl md:text-headline-lg uppercase tracking-tight text-off-white">Designed for Control</h2>
   <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto mt-6">
     Every element within the Ford GT cabin is ruthlessly optimized for driver focus. Fixed seats ensure perfect weight distribution, while the adjustable pedal box and steering column bring the controls to you.
   </p>
@@ -110,17 +110,17 @@ export default function Specs() {
 </section>
 
 {/*  Interactive Aero Section  */}
-<section className="py-40 bg-matte-black">
-<div className="max-w-container-max mx-auto px-margin-desktop text-center mb-24">
+<section className="py-24 md:py-40 bg-matte-black">
+<div className="max-w-container-max mx-auto px-6 md:px-margin-desktop text-center mb-16 md:mb-24">
 <span className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} block mb-4 uppercase transition-colors`}>Advanced Aerodynamics</span>
-<h2 className="font-headline-lg text-headline-lg uppercase tracking-tight text-off-white">Anatomy of Air</h2>
+<h2 className="font-headline-lg text-4xl md:text-headline-lg uppercase tracking-tight text-off-white">Anatomy of Air</h2>
 </div>
 <div className="relative max-w-[1200px] mx-auto group">
 <img loading="lazy" className="w-full h-auto" alt="A top-down view of a Ford GT." src={galleryTopdownImg}/>
 
 {/*  Hotspot 1: Rear Wing  */}
 <button 
-  className="absolute top-[35%] right-[20%] z-20 group/hotspot focus:outline-none"
+  className="absolute top-[35%] right-[20%] z-20 group/hotspot focus:outline-none flex items-center justify-center min-w-[48px] min-h-[48px] touch-manipulation"
   aria-label="Toggle details for Active Rear Wing"
   aria-expanded={activeHotspot === 'wing'}
   onClick={() => setActiveHotspot(activeHotspot === 'wing' ? null : 'wing')}
@@ -129,7 +129,7 @@ export default function Specs() {
 <div className={`absolute inset-0 ${theme.bg} rounded-full hotspot-ring transition-colors`}></div>
 <div className={`relative w-4 h-4 ${theme.bg} rounded-full transition-colors`}></div>
 </div>
-<div className={`absolute left-10 top-1/2 -translate-y-1/2 w-64 glass-panel p-6 border-l-2 ${theme.border} opacity-0 translate-x-4 pointer-events-none group-hover/hotspot:opacity-100 group-focus/hotspot:opacity-100 group-hover/hotspot:translate-x-0 transition-all duration-500 text-left`}>
+<div className={`absolute left-1/2 md:left-12 top-14 md:top-1/2 -translate-x-1/2 md:-translate-x-0 md:-translate-y-1/2 w-64 glass-panel p-6 border-t-2 md:border-t-0 md:border-l-2 ${theme.border} opacity-0 translate-y-4 md:translate-y-0 md:translate-x-4 pointer-events-none group-hover/hotspot:opacity-100 group-focus/hotspot:opacity-100 group-hover/hotspot:translate-y-0 md:group-hover/hotspot:translate-x-0 transition-all duration-500 text-center md:text-left`}>
 <span className={`block font-label-bold text-label-bold ${theme.text} mb-2 uppercase transition-colors`}>Active Rear Wing</span>
 <p className="text-body-sm text-on-surface-variant">Changes shape and angle to maximize downforce or act as an airbrake during high-speed maneuvers.</p>
 </div>
@@ -137,7 +137,7 @@ export default function Specs() {
 
 {/*  Hotspot 2: Flying Buttress  */}
 <button 
-  className="absolute top-[45%] left-[35%] z-20 group/hotspot focus:outline-none"
+  className="absolute top-[45%] left-[35%] z-20 group/hotspot focus:outline-none flex items-center justify-center min-w-[48px] min-h-[48px] touch-manipulation"
   aria-label="Toggle details for Flying Buttress"
   aria-expanded={activeHotspot === 'buttress'}
   onClick={() => setActiveHotspot(activeHotspot === 'buttress' ? null : 'buttress')}
@@ -146,7 +146,7 @@ export default function Specs() {
 <div className={`absolute inset-0 ${theme.bg} rounded-full hotspot-ring transition-colors`}></div>
 <div className={`relative w-4 h-4 ${theme.bg} rounded-full transition-colors`}></div>
 </div>
-<div className={`absolute right-10 top-1/2 -translate-y-1/2 w-64 glass-panel p-6 border-r-2 ${theme.border} text-right opacity-0 -translate-x-4 pointer-events-none group-hover/hotspot:opacity-100 group-focus/hotspot:opacity-100 group-hover/hotspot:translate-x-0 transition-all duration-500`}>
+<div className={`absolute right-1/2 md:right-12 top-14 md:top-1/2 translate-x-1/2 md:translate-x-0 md:-translate-y-1/2 w-64 glass-panel p-6 border-t-2 md:border-t-0 md:border-r-2 ${theme.border} text-center md:text-right opacity-0 translate-y-4 md:translate-y-0 md:-translate-x-4 pointer-events-none group-hover/hotspot:opacity-100 group-focus/hotspot:opacity-100 group-hover/hotspot:translate-y-0 md:group-hover/hotspot:translate-x-0 transition-all duration-500`}>
 <span className={`block font-label-bold text-label-bold ${theme.text} mb-2 uppercase transition-colors`}>Flying Buttress</span>
 <p className="text-body-sm text-on-surface-variant">The signature design element that directs airflow while housing the intake for the EcoBoost V6.</p>
 </div>
@@ -154,7 +154,7 @@ export default function Specs() {
 
 {/*  Hotspot 3: Suspension  */}
 <button 
-  className="absolute bottom-[20%] left-[45%] z-20 group/hotspot focus:outline-none"
+  className="absolute bottom-[20%] left-[45%] z-20 group/hotspot focus:outline-none flex items-center justify-center min-w-[48px] min-h-[48px] touch-manipulation"
   aria-label="Toggle details for Pushrod Suspension"
   aria-expanded={activeHotspot === 'suspension'}
   onClick={() => setActiveHotspot(activeHotspot === 'suspension' ? null : 'suspension')}
@@ -172,12 +172,12 @@ export default function Specs() {
 </section>
 
 {/*  Race Legacy: Le Mans Section  */}
-<section className="py-60 bg-matte-black relative overflow-hidden">
-<div className="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<section className="py-24 md:py-60 bg-matte-black relative overflow-hidden">
+<div className="max-w-container-max mx-auto px-6 md:px-margin-desktop relative z-10">
 <div className="grid lg:grid-cols-12 gap-16 items-start">
 <div className="lg:col-span-5 scroll-reveal">
 <span className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} block mb-6 tracking-[0.5em] transition-colors`}>RACE LEGACY</span>
-<h2 className="font-display-xl text-headline-lg mb-10 uppercase leading-none text-off-white">The Return of <br/><span className={`${theme.text} transition-colors`}>The Legend</span></h2>
+<h2 className="font-display-xl text-4xl md:text-headline-lg mb-10 uppercase leading-none text-off-white">The Return of <br/><span className={`${theme.text} transition-colors`}>The Legend</span></h2>
 <div className="space-y-8">
 <div className={`relative pl-12 border-l-2 ${theme.border} transition-colors`}>
 <span className={`absolute left-[-2px] top-0 h-8 w-1 ${theme.bg} transition-colors`}></span>
@@ -216,7 +216,7 @@ export default function Specs() {
 </section>
 
 {/*  Technical Specs: Dual Stripe Divider  */}
-<section className="py-40 px-margin-desktop bg-surface-container-lowest">
+<section className="py-24 md:py-40 px-6 md:px-margin-desktop bg-surface-container-lowest">
 <div className="max-w-4xl mx-auto">
 <div className="relative h-20 flex items-center justify-center mb-24">
 <div className="w-full h-[1px] bg-surface-variant/30"></div>
@@ -254,23 +254,23 @@ export default function Specs() {
 </section>
 
 {/*  Call to Action  */}
-<section className="py-60 px-margin-desktop relative overflow-hidden">
+<section className="py-24 md:py-60 px-6 md:px-margin-desktop relative overflow-hidden">
 <div className="absolute inset-0 z-0">
 <img loading="lazy" className="w-full h-full object-cover opacity-30" alt="An abstract cinematic detail of the Ford GT's rear exhaust port glowing hot red at dusk." src={engineCoverImg}/>
 <div className="absolute inset-0 bg-matte-black/60"></div>
 </div>
 <div className="relative z-10 max-w-container-max mx-auto text-center">
-<h2 className="font-display-xl text-headline-lg mb-12 uppercase text-off-white">A car you earn, not buy.</h2>
+<h2 className="font-display-xl text-4xl md:text-headline-lg mb-12 uppercase text-off-white">A car you earn, not buy.</h2>
 <p className="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mb-16">
                 The Ford GT production is extremely limited. Every owner is selected through a rigorous application process.
             </p>
 <div className="flex flex-col md:flex-row justify-center gap-6">
-<Link to="/ownership" className={`inline-block px-12 py-5 ${theme.bg} font-eyebrow-caps text-eyebrow-caps text-off-white ${theme.hoverBg} transition-all transform active:scale-95`}>
+<Link to="/ownership" className={`inline-flex items-center justify-center px-12 py-5 ${theme.bg} font-eyebrow-caps text-eyebrow-caps text-off-white ${theme.hoverBg} transition-all transform active:scale-95 min-h-[48px] touch-manipulation select-none`}>
                     Apply for Ownership
                 </Link>
 <button 
   onClick={() => setModalOpen(true)} 
-  className="inline-block px-12 py-5 border border-off-white/30 font-eyebrow-caps text-eyebrow-caps text-off-white hover:bg-off-white hover:text-matte-black transition-all transform active:scale-95"
+  className="inline-flex items-center justify-center px-12 py-5 border border-off-white/30 font-eyebrow-caps text-eyebrow-caps text-off-white hover:bg-off-white hover:text-matte-black transition-all transform active:scale-95 min-h-[48px] touch-manipulation select-none"
 >
                     View Registry
                 </button>

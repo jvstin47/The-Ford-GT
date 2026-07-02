@@ -21,7 +21,7 @@ export default function Ownership() {
   return (
     <div className="w-full">
 {/*  Hero: Exclusivity & Ownership  */}
-<section className="relative min-h-screen flex flex-col justify-center items-center px-margin-mobile md:px-margin-desktop pt-32 pb-40 overflow-hidden">
+<section className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-margin-desktop pt-24 md:pt-32 pb-24 md:pb-40 overflow-hidden">
 <div className="absolute inset-0 z-0" aria-hidden="true">
   <div className="w-full h-full parallax-bg scale-105 transition-all duration-1000" style={{ backgroundImage: `url(${selectedPaint.img})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
   <div className="absolute inset-0 bg-gradient-to-b from-matte-black/90 via-matte-black/40 to-matte-black"></div>
@@ -30,20 +30,20 @@ export default function Ownership() {
 
 <div className="relative z-10 text-center max-w-4xl fade-in-section" id="ownership-intro">
 <span className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} tracking-[0.6em] mb-8 block transition-colors`}>THE EARNED ELITE</span>
-<h1 className="font-display-xl text-display-xl text-off-white mb-12">A car you earn, not buy.</h1>
+<h1 className="font-display-xl text-6xl md:text-display-xl text-off-white mb-12">A car you earn, not buy.</h1>
 <p className="font-body-md text-body-md text-on-surface-variant mb-16 leading-relaxed max-w-2xl mx-auto">
                     The Ford GT is a manifestation of ultra-high performance. To ensure every GT finds a home with an individual committed to its legacy, ownership is granted through a rigorous application-only process.
                 </p>
 <div className="flex flex-col md:flex-row justify-center gap-8 items-center">
 <button 
   onClick={() => handleOpenModal('Applications for the current production run of the Ford GT are currently closed. Please check back later or contact your local Ford Performance dealer.')} 
-  className={`w-full md:w-auto px-12 py-5 ${theme.bg} text-off-white font-eyebrow-caps text-label-bold tracking-widest ${theme.hoverBg} transition-all`}
+  className={`w-full md:w-auto px-12 py-5 ${theme.bg} text-off-white font-eyebrow-caps text-label-bold tracking-widest ${theme.hoverBg} transition-all min-h-[48px] touch-manipulation flex items-center justify-center select-none active:scale-95`}
 >
                         START APPLICATION
                     </button>
 <button 
   onClick={() => handleOpenModal('The Owner Portal is currently undergoing maintenance. Please use the concierge phone line provided in your welcome package for immediate assistance.')} 
-  className={`w-full md:w-auto px-12 py-5 border border-off-white text-off-white font-eyebrow-caps text-label-bold tracking-widest hover:${theme.bg} hover:border-transparent transition-all`}
+  className={`w-full md:w-auto px-12 py-5 border border-off-white text-off-white font-eyebrow-caps text-label-bold tracking-widest hover:${theme.bg} hover:border-transparent transition-all min-h-[48px] touch-manipulation flex items-center justify-center select-none active:scale-95`}
 >
                         OWNER PORTAL
                     </button>
@@ -56,7 +56,7 @@ export default function Ownership() {
 </section>
 
 {/*  Ownership Tiers / Stats  */}
-<section className="py-40 bg-matte-black px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto fade-in-section">
+<section className="py-24 md:py-40 bg-matte-black px-6 md:px-margin-desktop max-w-container-max mx-auto fade-in-section">
 <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
 <div className={`flex flex-col gap-6 p-8 border-t-2 ${theme.border} bg-carbon-gray transition-colors`}>
 <span className={`font-eyebrow-caps text-label-bold ${theme.text} transition-colors`}>01. SCARCITY</span>
@@ -77,7 +77,7 @@ export default function Ownership() {
 </section>
 
 {/* Concierge Services */}
-<section className="py-40 bg-surface px-margin-desktop relative overflow-hidden">
+<section className="py-24 md:py-40 bg-surface px-6 md:px-margin-desktop relative overflow-hidden">
   <div className="max-w-container-max mx-auto grid md:grid-cols-2 gap-24 items-center relative z-10">
     <div className="relative group">
       <div className={`absolute -inset-4 border-2 ${theme.border} opacity-20 group-hover:opacity-50 transition-all duration-700`}></div>
@@ -110,11 +110,11 @@ export default function Ownership() {
 </section>
 
 {/*  Full-Width Minimal Gallery  */}
-<section className="py-40 px-gutter md:px-margin-desktop fade-in-section bg-matte-black">
+<section className="py-24 md:py-40 px-6 md:px-margin-desktop fade-in-section bg-matte-black">
 <div className="mb-20 flex justify-between items-end">
 <div>
 <span className="font-eyebrow-caps text-eyebrow-caps text-off-white/50 block mb-4">MUSEUM OF SPEED</span>
-<h2 className="font-display-xl text-headline-lg md:text-display-xl text-off-white">The Gallery.</h2>
+<h2 className="font-display-xl text-4xl md:text-display-xl text-off-white">The Gallery.</h2>
 </div>
 <div className="hidden md:flex gap-4">
 <span className={`material-symbols-outlined ${theme.text} text-4xl transition-colors`}>grid_view</span>
@@ -170,7 +170,7 @@ export default function Ownership() {
 
 <div className="relative z-10 text-center px-margin-mobile">
 <span className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} tracking-[0.8em] mb-6 block transition-colors`}>LEGACY FORWARD</span>
-<h2 className="font-headline-lg text-headline-lg md:text-[64px] text-off-white mb-8">The Future of the GT Bloodline.</h2>
+<h2 className="font-headline-lg text-4xl md:text-[64px] text-off-white mb-8">The Future of the GT Bloodline.</h2>
 <div className="mx-auto max-w-xs h-px bg-surface-variant/40 relative flex justify-center items-center">
   <div className={`w-16 h-1 ${theme.bg} transition-colors`}></div>
 </div>

@@ -22,7 +22,7 @@ export default function Home() {
 </div>
 <div className="relative z-10 text-center px-margin-mobile">
 <p className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} mb-6 tracking-[0.6em] animate-pulse transition-colors`}>LEGACY DEFINED</p>
-<h1 className="font-display-xl text-display-xl md:text-[120px] text-off-white uppercase leading-none mb-8 drop-shadow-2xl">
+<h1 className="font-display-xl text-6xl md:text-[120px] text-off-white uppercase leading-none mb-8 drop-shadow-2xl">
                 THE APEX OF<br/>ENGINEERING.
             </h1>
 <div className={`w-24 h-1 ${theme.bg} mx-auto mb-12 transition-colors`}></div>
@@ -36,17 +36,17 @@ export default function Home() {
 {/*  Stats Ticker  */}
 <section className="bg-carbon-gray border-y border-surface-variant/30 py-16 relative overflow-hidden">
 <div className="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
-<div className="flex flex-col items-center justify-center border-r border-surface-variant/20">
+<div className="flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-surface-variant/20 pb-8 md:pb-0">
 <span className="font-eyebrow-caps text-eyebrow-caps text-outline mb-2">0 - 60 MPH</span>
-<span className="font-display-xl text-headline-lg text-off-white">3.0S</span>
+<span className="font-display-xl text-5xl md:text-headline-lg text-off-white">3.0S</span>
 </div>
-<div className="flex flex-col items-center justify-center border-r border-surface-variant/20">
+<div className="flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-surface-variant/20 pb-8 md:pb-0">
 <span className="font-eyebrow-caps text-eyebrow-caps text-outline mb-2">TOP SPEED</span>
-<span className="font-display-xl text-headline-lg text-off-white">216 MPH</span>
+<span className="font-display-xl text-5xl md:text-headline-lg text-off-white">216 MPH</span>
 </div>
 <div className="flex flex-col items-center justify-center">
 <span className="font-eyebrow-caps text-eyebrow-caps text-outline mb-2">HORSEPOWER</span>
-<span className="font-display-xl text-headline-lg text-off-white">660 HP</span>
+<span className="font-display-xl text-5xl md:text-headline-lg text-off-white">660 HP</span>
 </div>
 </div>
 </section>
@@ -67,21 +67,21 @@ export default function Home() {
 
 {/* Track Dominance Gallery */}
 <section className="py-20 bg-surface">
-  <div className="flex w-full h-[70vh] min-h-[500px]">
-    <div className="w-1/2 h-full relative group overflow-hidden">
+  <div className="flex flex-col md:flex-row w-full h-auto md:h-[70vh] min-h-[500px]">
+    <div className="w-full md:w-1/2 h-[50vh] md:h-full relative group overflow-hidden">
       <img loading="lazy" src={homeGallerySliderImg} alt="Dynamic track shot of the Ford GT in motion" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
       <div className="absolute inset-0 bg-gradient-to-t from-matte-black via-transparent to-transparent"></div>
-      <div className="absolute bottom-12 left-12">
+      <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12">
         <span className={`font-eyebrow-caps text-label-bold ${theme.text} mb-2 block transition-colors`}>01</span>
-        <h3 className="font-headline-lg text-3xl text-off-white uppercase">Track Devourer</h3>
+        <h3 className="font-headline-lg text-2xl md:text-3xl text-off-white uppercase">Track Devourer</h3>
       </div>
     </div>
-    <div className="w-1/2 h-full relative group overflow-hidden">
-      <img loading="lazy" src={galleryWheelImg} alt="Detailed shot of the Ford GT wheel and Brembo brakes" className="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:scale-110 group-hover:grayscale-0" />
+    <div className="w-full md:w-1/2 h-[50vh] md:h-full relative group overflow-hidden">
+      <img loading="lazy" src={galleryWheelImg} alt="Detailed shot of the Ford GT wheel and Brembo brakes" className="w-full h-full object-cover grayscale md:hover:grayscale-0 transition-all duration-1000 group-hover:scale-110" />
       <div className="absolute inset-0 bg-gradient-to-t from-matte-black via-transparent to-transparent"></div>
-      <div className="absolute bottom-12 left-12">
+      <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12">
         <span className={`font-eyebrow-caps text-label-bold ${theme.text} mb-2 block transition-colors`}>02</span>
-        <h3 className="font-headline-lg text-3xl text-off-white uppercase">Machined Perfection</h3>
+        <h3 className="font-headline-lg text-2xl md:text-3xl text-off-white uppercase">Machined Perfection</h3>
       </div>
     </div>
   </div>
@@ -143,7 +143,7 @@ export default function Home() {
 <p className="font-body-md text-body-md text-on-surface-variant mb-12">
                     In 1966, we broke the mold. In 2016, we returned to prove it again. Every GT on the road today carries the same competitive fire that dominated Le Mans.
                 </p>
-<Link to="/heritage" className={`group flex items-center gap-6 font-eyebrow-caps text-eyebrow-caps text-off-white ${theme.hoverText} transition-colors`}>
+<Link to="/heritage" className={`group flex items-center gap-6 font-eyebrow-caps text-eyebrow-caps text-off-white ${theme.hoverText} transition-colors min-h-[48px] touch-manipulation`}>
 <span className={`border-b border-off-white group-hover:${theme.border} pb-1 transition-colors`}>VIEW THE ARCHIVES</span>
 <span className="material-symbols-outlined transform group-hover:translate-x-2 transition-transform">arrow_forward</span>
 </Link>
@@ -159,10 +159,10 @@ export default function Home() {
                 The Ford GT application process is a journey of its own. Reserved for the most passionate collectors and enthusiasts who will carry the legacy forward.
             </p>
 <div className="flex flex-col md:flex-row justify-center gap-8">
-<Link to="/ownership" className={`inline-block bg-off-white text-matte-black px-12 py-5 font-eyebrow-caps text-eyebrow-caps font-bold ${theme.hoverBg} hover:text-off-white transition-all transform active:scale-95`}>
+<Link to="/ownership" className={`inline-flex items-center justify-center bg-off-white text-matte-black px-12 py-5 font-eyebrow-caps text-eyebrow-caps font-bold ${theme.hoverBg} hover:text-off-white transition-all transform active:scale-95 min-h-[48px] touch-manipulation select-none`}>
                     INQUIRE NOW
                 </Link>
-<Link to="/specs" className={`inline-block border border-surface-variant px-12 py-5 font-eyebrow-caps text-eyebrow-caps text-off-white hover:${theme.border} transition-all transform active:scale-95`}>
+<Link to="/specs" className={`inline-flex items-center justify-center border border-surface-variant px-12 py-5 font-eyebrow-caps text-eyebrow-caps text-off-white hover:${theme.border} transition-all transform active:scale-95 min-h-[48px] touch-manipulation select-none`}>
                     DOWNLOAD BROCHURE
                 </Link>
 </div>

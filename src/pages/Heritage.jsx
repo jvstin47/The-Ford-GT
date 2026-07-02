@@ -22,14 +22,14 @@ export default function Heritage() {
 <div className="absolute inset-0 bg-gradient-to-t from-matte-black via-transparent to-transparent z-10"></div>
 <img className="w-full h-full object-cover transition-opacity duration-1000" alt="A cinematic low-angle wide shot of a modern Liquid Blue Ford GT on a sun-drenched coastal highway." src={heritageHeroImg} />
 </div>
-<div className="relative z-20 px-margin-desktop w-full max-w-container-max mx-auto">
+<div className="relative z-20 px-6 md:px-margin-desktop w-full max-w-container-max mx-auto">
 <div className="max-w-3xl">
 <p className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} mb-unit-2 tracking-[0.6em] transition-colors`}>ESTABLISHED 1964</p>
-<h1 className="font-display-xl text-display-xl mb-unit-4 leading-[0.9] text-off-white drop-shadow-lg">SIXTY YEARS.<br />ONE PURPOSE.</h1>
+<h1 className="font-display-xl text-6xl md:text-display-xl mb-unit-4 leading-[0.9] text-off-white drop-shadow-lg">SIXTY YEARS.<br />ONE PURPOSE.</h1>
 <p className="font-body-md text-body-md text-on-surface-variant mb-unit-8 max-w-xl">
                     A bridge between 1966 and tomorrow. Born to win Le Mans. Built to redefine the supercar.
                 </p>
-<div className={`flex gap-12 border-l-4 ${theme.border} pl-8 py-4 bg-carbon-gray/30 backdrop-blur-sm transition-colors`}>
+<div className={`flex flex-col md:flex-row gap-8 md:gap-12 border-l-4 ${theme.border} pl-6 md:pl-8 py-4 bg-carbon-gray/30 backdrop-blur-sm transition-colors`}>
 <div>
 <span className="block font-label-bold text-label-bold text-outline uppercase tracking-widest mb-1">Acceleration</span>
 <span className="font-display-xl text-[40px] font-bold text-off-white">3.0<span className="text-xl ml-1 text-on-surface-variant">S</span></span>
@@ -67,7 +67,7 @@ export default function Heritage() {
 <p className="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-8">
                             Henry Ford II's quest to unseat the dominant Italian force at Le Mans. A 7.0-liter V8 heart wrapped in a body only forty inches tall.
                         </p>
-<a href="#timeline" className={`font-label-bold text-label-bold text-off-white border-b border-off-white pb-2 ${theme.hoverText} hover:${theme.border} transition-all`}>DISCOVER ORIGINS</a>
+<a href="#timeline" className={`font-label-bold text-label-bold text-off-white border-b border-off-white pb-2 ${theme.hoverText} hover:${theme.border} transition-all inline-flex items-center min-h-[48px] touch-manipulation`}>DISCOVER ORIGINS</a>
 </div>
 </div>
 {/*  Modern Half  */}
@@ -81,7 +81,7 @@ export default function Heritage() {
 <p className="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-8">
                             50 years later, the return to the Circuit de la Sarthe. Twin-turbocharged EcoBoost power meets active aerodynamics and carbon-shell technology.
                         </p>
-<Link to="/specs" className={`font-label-bold text-label-bold text-off-white border-b border-off-white pb-2 ${theme.hoverText} hover:${theme.border} transition-all`}>VIEW SPECS</Link>
+<Link to="/specs" className={`font-label-bold text-label-bold text-off-white border-b border-off-white pb-2 ${theme.hoverText} hover:${theme.border} transition-all inline-flex items-center min-h-[48px] touch-manipulation`}>VIEW SPECS</Link>
 </div>
 </div>
 {/*  Vertical Center Stripe  */}
@@ -92,17 +92,17 @@ export default function Heritage() {
 </section>
 
 {/* Interactive Timeline Section (Expanded) */}
-<section id="timeline" className="py-[160px] px-margin-desktop bg-surface relative overflow-hidden">
-<div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
+<section id="timeline" className="py-24 md:py-[160px] px-6 md:px-margin-desktop bg-surface relative overflow-hidden">
+<div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-20 pointer-events-none">
   <img loading="lazy" src={heritageTimeline1966Img} className="w-full h-full object-cover" style={{ maskImage: 'linear-gradient(to right, transparent, black)' }} alt="Vintage 1966 Le Mans pit stop" />
 </div>
-<div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start relative z-10">
+<div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter items-start relative z-10">
 <div className="lg:col-span-4 sticky top-40">
 <span className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} tracking-widest block mb-4 transition-colors`}>MILESTONES</span>
 <h2 className="font-headline-lg text-headline-lg mb-8 leading-tight text-off-white">MOMENTS THAT<br />DEFINED SPEED</h2>
 <div className={`w-24 h-1 ${theme.bg} transition-colors`}></div>
 </div>
-<div className="lg:col-span-8 flex flex-col gap-32 pl-12 border-l border-surface-variant/30">
+<div className="lg:col-span-8 flex flex-col gap-24 md:gap-32 pl-6 md:pl-12 border-l border-surface-variant/30">
 {/*  1964  */}
 <div className="scroll-reveal group visible">
 <span className={`font-display-xl text-[64px] font-bold text-on-surface/20 ${theme.hoverText} transition-colors duration-500 cursor-default`}>1964</span>
@@ -150,14 +150,14 @@ export default function Heritage() {
 </section>
 
 {/*  Engineering Feature  */}
-<section className="py-[160px] relative overflow-hidden bg-matte-black">
+<section className="py-24 md:py-[160px] relative overflow-hidden bg-matte-black px-6 md:px-0">
 <div className="absolute inset-0 opacity-20">
 
 </div>
-<div className="px-margin-desktop w-full max-w-container-max mx-auto relative z-10">
-<div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div className="px-0 md:px-margin-desktop w-full max-w-container-max mx-auto relative z-10">
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center">
 <div className="relative z-10">
-<div className={`absolute -top-12 -left-12 w-48 h-48 border-t-2 border-l-2 ${theme.border} opacity-50 transition-colors`}></div>
+<div className={`absolute -top-6 -left-6 md:-top-12 md:-left-12 w-24 h-24 md:w-48 md:h-48 border-t-2 border-l-2 ${theme.border} opacity-50 transition-colors`}></div>
 <img loading="lazy" className="w-full grayscale brightness-75 rounded-sm shadow-2xl" alt="A technical blueprint-style image of a Ford GT chassis" src={carbonTubImg} />
 </div>
 <div className="z-10">
@@ -183,17 +183,17 @@ export default function Heritage() {
 </section>
 
 {/*  Exclusivity Section  */}
-<section className="py-[160px] px-margin-desktop bg-surface-container-lowest">
+<section className="py-24 md:py-[160px] px-6 md:px-margin-desktop bg-surface-container-lowest">
 <div className="max-w-container-max mx-auto text-center">
-<div className={`inline-block px-12 py-16 border ${theme.border} relative bg-carbon-gray/20 transition-colors`}>
+<div className={`inline-block px-6 md:px-12 py-12 md:py-16 border ${theme.border} relative bg-carbon-gray/20 transition-colors`}>
 <div className={`absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 ${theme.border} transition-colors`}></div>
 <div className={`absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 ${theme.border} transition-colors`}></div>
 <span className={`font-eyebrow-caps text-eyebrow-caps ${theme.text} mb-8 block transition-colors`}>THE APPLICATION PROCESS</span>
-<h2 className="font-display-xl text-[64px] mb-8 uppercase text-off-white">A CAR YOU EARN, NOT BUY.</h2>
+<h2 className="font-display-xl text-4xl md:text-[64px] mb-8 uppercase text-off-white">A CAR YOU EARN, NOT BUY.</h2>
 <p className="font-body-md text-body-md text-outline max-w-2xl mx-auto mb-12">
                     Ownership of a Ford GT is a partnership with Ford Performance. Each applicant is hand-selected based on their loyalty to the brand and passion for automotive excellence.
                 </p>
-<Link to="/ownership" className={`inline-block bg-off-white text-matte-black px-12 py-4 font-label-bold text-label-bold tracking-widest ${theme.hoverBg} hover:text-white transition-all transform active:scale-95`}>REGISTER INTEREST</Link>
+<Link to="/ownership" className={`inline-flex items-center justify-center bg-off-white text-matte-black px-12 py-4 font-label-bold text-label-bold tracking-widest ${theme.hoverBg} hover:text-white transition-all transform active:scale-95 min-h-[48px] touch-manipulation select-none`}>REGISTER INTEREST</Link>
 </div>
 </div>
 </section>
